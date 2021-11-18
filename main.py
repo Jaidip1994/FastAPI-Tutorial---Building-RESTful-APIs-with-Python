@@ -26,11 +26,13 @@ db: List[User] = [
 async def root():
     return {"Hello": "World"}
 
+
 @app.get(path="/api/v1/users")
 async def fetch_users():
     return db
 
+
 @app.post(path="/api/v1/users")
-async def register_user(user:User):
+async def register_user(user: User):
     db.append(user)
-    return { "id": user.id }
+    return {"id": user.id}

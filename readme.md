@@ -12,4 +12,5 @@ On Uvicorn server, run the `main` file and inside that file the application is n
 
 ## How to get the API Documentation
 - http://localhost:8000/docs#/
-This opens the Swagger link of the available APIs
+This opens the Swagger link of the available APIs and the requested body and response 
+- http://localhost:8000/redoc Just the API Documentation
